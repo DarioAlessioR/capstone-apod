@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import { useSelector } from 'react-redux/es/exports';
 import MissionTable from '../components/MissionTable';
 

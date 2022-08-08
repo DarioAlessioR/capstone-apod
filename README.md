@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: React-Space-Travelers
+# Project Name: APOD
 
 Project for React & Redux group project - Space Travelers' Hub
 

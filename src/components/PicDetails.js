@@ -5,13 +5,15 @@ const PicDetails = (props) => {
     name, description, image, author, date, media, service,
   } = props;
 
-  // console.log(props);
-
   return (
     <li className="singlepic-container">
       {
         (media === 'image') ? <img className="rocket-container__img" src={image} alt={name} />
-          : <iframe title="video" width="560" height="315" src={image} />
+          : (
+            <div className="video-container">
+              <iframe className="video" title="video" width="540" height="370" src={image} />
+            </div>
+          )
        }
       <div className="singlepic-info">
         <h1 className="singlepic-info__title">
@@ -50,13 +52,23 @@ const PicDetails = (props) => {
 };
 
 PicDetails.propTypes = {
-  author: PropTypes.string.isRequired,
-  media: PropTypes.string.isRequired,
-  service: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  author: PropTypes.string,
+  media: PropTypes.string,
+  service: PropTypes.string,
+  date: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+};
+
+PicDetails.defaultProps = {
+  image: 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg',
+  author: 'N/A',
+  media: 'N/A',
+  service: 'N/A',
+  date: 'N/A',
+  name: 'N/A',
+  description: 'N/A',
 };
 
 export default PicDetails;

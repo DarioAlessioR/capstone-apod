@@ -31,7 +31,13 @@ const Pics = (props) => {
           {' '}
           {date}
         </p>
-        <button className="pic-see-details" type="button" onClick={() => handleClick(date)}>See details</button>
+        <button
+          className="pic-see-details"
+          type="button"
+          onClick={() => handleClick(date)}
+        >
+          See details
+        </button>
       </div>
     </li>
   );
@@ -47,7 +53,7 @@ Pics.propTypes = {
 
 Pics.defaultProps = {
   image: 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg',
-  thumb: 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg'
-}
+  thumb: 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg',
+};
 
 export default Pics;

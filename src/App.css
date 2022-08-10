@@ -31,11 +31,15 @@ li {
 }
 
 .nav-container__items a {
-  font-size: 3vw;
+  font-size: 2.3vw;
   font-weight: 600;
   color: rgb(190, 203, 207);
   border-left: 0.1rem solid rgb(158, 167, 170);
   padding-left: 0.5rem;
+}
+
+.nav-item2 {
+  font-size: 0.5vw;
 }
 
 .active {
@@ -77,19 +81,17 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 13.2vw;
+  column-gap: 4.2vw;
   row-gap: 15px;
   color: rgb(184, 179, 179);
   background-position: center;
   background-size: cover;
-}
-
-form {
-  color: white;
+  justify-content: center;
 }
 
 .pic-container {
-  width: 10%;
+  width: 15vw;
+  min-width: 85px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,22 +108,28 @@ form {
 }
 
 .pic-container__img {
-  width: 100px;
-  height: 100px;
+  width: 15vw;
+  min-width: 85px;
+  height: 10vw;
+  min-height: 57px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   border-radius: 10px;
 }
 
 .pic-info__title {
-  font-size: 0.8rem;
+  font-size: 2.3vw;
 }
 
 .pic-info__date {
-  font-size: 0.8rem;
+  font-size: 2.3vw;
 }
 
 .pic-see-details {
   background-color: rgb(13, 3, 49);
   color: #bbb;
+  font-size: 1.2vw;
 }
 
 .pic-see-details:hover {
@@ -130,6 +138,16 @@ form {
 
 img {
   width: 100%;
+}
+
+.video-container {
+  margin: 0 auto;
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+  width: auto;
 }
 
 .detail {
@@ -153,8 +171,13 @@ img {
   flex-direction: row;
   gap: 10px;
   padding-bottom: 10px;
-  font-size: 0.8rem;
+  font-size: 2.2vw;
   opacity: 0.7;
+  color: white;
+}
+
+select {
+  font-size: 1.8vw;
 }
 
 .wait {

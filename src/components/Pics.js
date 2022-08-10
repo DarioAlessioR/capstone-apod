@@ -40,9 +40,14 @@ const Pics = (props) => {
 Pics.propTypes = {
   date: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   media: PropTypes.string.isRequired,
-  thumb: PropTypes.string.isRequired,
+  thumb: PropTypes.string,
 };
+
+Pics.defaultProps = {
+  image: 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg',
+  thumb: 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg'
+}
 
 export default Pics;

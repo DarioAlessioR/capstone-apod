@@ -9,9 +9,7 @@ const SinglePic = () => {
 
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/rockets/');
-  };
+  const handleClick = () => navigate('/');
 
   let selecteddate = '2022-07-27';
   if (date) selecteddate = date;
@@ -32,7 +30,7 @@ const SinglePic = () => {
           key={pics[selecteddate].id}
         />
       </ul>
-      <button className="returnbutton" type="button" onClick={handleClick()}>Return to homepage</button>
+      <button className="returnbutton" type="button" onClick={() => handleClick()}>Return to homepage</button>
     </div>
   );
 };

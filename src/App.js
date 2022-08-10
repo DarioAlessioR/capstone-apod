@@ -8,13 +8,17 @@ import './App.css';
 import SinglePic from './pages/SinglePic';
 
 function App() {
-  const [seletected, setSelected] = useState('all');
+  const [selected] = useState('all');
   const dispatch = useDispatch();
 
+  /*
   const handleClick = (event) => {
     console.log(event.target.value);
     // navigate('/rockets/');
-  };
+  }
+
+handleClick={handleClick}
+*/
 
   useEffect(() => {
     dispatch(getPics());
@@ -22,10 +26,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar handleClick={handleClick} />
+      <Navbar />
       <Routes>
         <Route index element={<PicsPage />} />
-        <Route path="/pics" element={<PicsPage selected={seletected} />} />
+        <Route path="/pics" element={<PicsPage selected={selected} />} />
         <Route path="/singlepic/:date" element={<SinglePic />} />
       </Routes>
     </BrowserRouter>

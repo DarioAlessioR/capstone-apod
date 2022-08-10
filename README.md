@@ -22,6 +22,8 @@ This information includes the following items:
 - Media service
 - Service code
 
+* Note on the size of images in the details section: for educational and entertaiment porpouses, the size of the image in this section has been set to a very big size, which lets the user to explore small sections of each image with the scroll of the browser. 
+
 The APOD app has been built with React and Redux / Redux Toolkit.
 
 ## Requirements:

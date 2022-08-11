@@ -35,7 +35,8 @@ test('pic displayed', () => {
 });
 
 test('pic displayed', () => {
-  render(<Pics media={picsProps.media}
+  render(<Pics
+    media={picsProps.media}
     date={picsProps.date}
     name={picsProps.name}
     image={picsProps.image}
@@ -43,9 +44,10 @@ test('pic displayed', () => {
   />, { wrapper: pictureRender });
   return expect(screen.getByText(/www/)).toBeInTheDocument;
 });
-  
+
 test('pic displayed', () => {
-  render(<Pics media={picsProps.media}
+  render(<Pics
+    media={picsProps.media}
     date={picsProps.date}
     name={picsProps.name}
     image={picsProps.image}

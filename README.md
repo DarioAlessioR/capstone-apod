@@ -4,6 +4,7 @@
 
 Project for React & Redux individual capstone assignment.
 
+![](src/assets/images/app-picture.png)
 
 The Astronomical Picture of the Day (APOD) app consists of the daily "picture of the day" image or video, provided by the National Space Agency (NASA) of the United States via its api site { NASA api's }. It's an official website of the goverment of USA, and can be visited at the following link:
 https://api.nasa.gov/
@@ -46,9 +47,6 @@ Use store, actions and reducers in React.
 Major languages: Javascript, HTML, CSS
 Frameworks: webpack, Jest, React, Redux, Redux Toolkit
 Technologies used: VSC, Github, Gitflow
-
-## App home page image:
-![](src/assets/images/app-picture.png)
 
 ## Getting Started:
 Clone the repository in your local machine using git clone.

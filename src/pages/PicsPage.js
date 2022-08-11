@@ -11,8 +11,8 @@ const PicsPage = () => {
 
   const handleClick = (event) => {
     if (event.target.value !== 'both') {
-      const pepito = picList.filter((date) => (pics[date].media === event.target.value));
-      setTempPictList(pepito);
+      const filteredPiclist = picList.filter((date) => (pics[date].media === event.target.value));
+      setTempPictList(filteredPiclist);
     } else {
       setTempPictList(picList);
     }

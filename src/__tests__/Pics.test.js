@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Pics from '../components/Pics.js';
+import Pics from '../components/Pics';
 
 const picsProps = {
   name: 'sss',
@@ -24,29 +24,32 @@ const pictureRender = () => (
 );
 
 test('pic displayed', () => {
+  render(<Pics
+    media={picsProps.media}
+    date={picsProps.date}
+    name={picsProps.name}
+    image={picsProps.image}
+    thumb={picsProps.thumb}
+  />, { wrapper: pictureRender });
+  return expect(screen.getByText(/sss/)).toBeInTheDocument;
+});
+
+test('pic displayed', () => {
   render(<Pics media={picsProps.media}
     date={picsProps.date}
     name={picsProps.name}
     image={picsProps.image}
-    thumb={picsProps.thumb} />, { wrapper: pictureRender });
-  expect(screen.getByText(/sss/)).toBeInTheDocument;
+    thumb={picsProps.thumb}
+  />, { wrapper: pictureRender });
+  return expect(screen.getByText(/www/)).toBeInTheDocument;
 });
-
-test('pic displayed', () => {
-    render(<Pics media={picsProps.media}
-      date={picsProps.date}
-      name={picsProps.name}
-      image={picsProps.image}
-      thumb={picsProps.thumb} />, { wrapper: pictureRender });
-    expect(screen.getByText(/www/)).toBeInTheDocument;
-  });
   
-  test('pic displayed', () => {
-    render(<Pics media={picsProps.media}
-      date={picsProps.date}
-      name={picsProps.name}
-      image={picsProps.image}
-      thumb={picsProps.thumb} />, { wrapper: pictureRender });
-    expect(screen.getByText(/See/)).toBeInTheDocument;
-  });
-
+test('pic displayed', () => {
+  render(<Pics media={picsProps.media}
+    date={picsProps.date}
+    name={picsProps.name}
+    image={picsProps.image}
+    thumb={picsProps.thumb}
+  />, { wrapper: pictureRender });
+  return expect(screen.getByText(/See/)).toBeInTheDocument;
+});

@@ -11,15 +11,6 @@ function App() {
   const [selected] = useState('all');
   const dispatch = useDispatch();
 
-  /*
-  const handleClick = (event) => {
-    console.log(event.target.value);
-    // navigate('/rockets/');
-  }
-
-handleClick={handleClick}
-*/
-
   useEffect(() => {
     dispatch(getPics());
   }, []);

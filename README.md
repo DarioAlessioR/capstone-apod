@@ -56,11 +56,9 @@ Please run: npm run build and then npm start to see project displayed in your br
 ## Live demo:
 
 To see the project deployed please visit anyone of the following links:
-
 https://tranquil-fudge-35218d.netlify.app/
 
 To see the videp presentation of the app, please visit the following link:
-
 https://www.loom.com/share/b1332bbcb84d4477924818c1f41a9834
 
 

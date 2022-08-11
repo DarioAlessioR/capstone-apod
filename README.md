@@ -6,7 +6,7 @@ Project for React & Redux individual capstone assignment.
 
 ![](src/assets/images/app-picture.png)
 
-The Astronomical Picture of the Day (APOD) app consists of the daily "picture of the day" image or video, provided by the National Space Agency (NASA) of the United States via its api site { NASA api's }. It's an official website of the goverment of USA, and can be visited at the following link:
+The Astronomical Picture of the Day (APOD) app consists of the daily "picture of the day" image or video, provided by the National Aeronautics and Space Administration of the United States (NASA) via its api site { NASA api's }. It's an official service of the goverment of USA, and can be visited at the following link:
 https://api.nasa.gov/
 
 The APOD app shows a collection of the last 30 images provided by the NASA api. Everyday, at midnight USA eastern standard time (USA East Coast time), a new pictured is added to the collection.
@@ -57,7 +57,12 @@ Please run: npm run build and then npm start to see project displayed in your br
 
 To see the project deployed please visit anyone of the following links:
 
-not available
+https://tranquil-fudge-35218d.netlify.app/
+
+To see the videp presentation of the app, please visit the following link:
+
+https://www.loom.com/share/b1332bbcb84d4477924818c1f41a9834
+
 
 ##  Authors
 👤 Author1

@@ -87,6 +87,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - To the NASA for providing the images and videos, as well as the scientific information of each picture.
+- To Nelson Sakwa: the author of the original design by the Creative Commons License.
 - Hat tip to anyone whose code was used
 - Inspiration
 

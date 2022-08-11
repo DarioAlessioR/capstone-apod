@@ -18,8 +18,6 @@ const thumbs = '&thumbs=True&';
 
 const finalUrl = apiUrl + apiKey + startdate + thumbs;
 
-// const apiUrl = 'https://api.spacexdata.com/v3/rockets';
-
 const picList = (objetc) => {
   let picData = {};
 

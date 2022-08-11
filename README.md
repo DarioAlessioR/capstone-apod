@@ -55,12 +55,12 @@ Please run: npm run build and then npm start to see project displayed in your br
 
 ## Live demo:
 
-To see the project deployed please visit anyone of the following links:
-https://tranquil-fudge-35218d.netlify.app/
+To see the project deployed please visit the following link:
+[Live demo link](https://tranquil-fudge-35218d.netlify.app/)
 
-To see the videp presentation of the app, please visit the following link:
-https://www.loom.com/share/b1332bbcb84d4477924818c1f41a9834
-
+## Video presentation:
+To see the video presentation of the app, please visit the following link:
+[Video presentation](https://www.loom.com/share/b1332bbcb84d4477924818c1f41a9834)
 
 ##  Authors
 👤 Author1
@@ -87,7 +87,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - To the NASA for providing the images and videos, as well as the scientific information of each picture.
-- To Nelson Sakwa: the author of the original design by the Creative Commons License.
+- To [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the [author of the original design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)), as required by the [Creative Commons License](https://creativecommons.org/licenses/).
 - Hat tip to anyone whose code was used
 - Inspiration
 

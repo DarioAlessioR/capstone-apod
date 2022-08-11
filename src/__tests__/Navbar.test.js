@@ -5,11 +5,10 @@ import Navbar from '../components/Navbar';
 
 test('Navbar displayed', () => {
   render(<Navbar />, { wrapper: BrowserRouter });
-  expect(screen.getByText(/Astronomical/)).toBeInTheDocument;
+  return expect(screen.getByText(/Astronomical/)).toBeInTheDocument;
 });
 
 test('Navbar displayed', () => {
   render(<Navbar />, { wrapper: BrowserRouter });
-  expect(screen.getByText(/Home/)).toBeInTheDocument;
+  return expect(screen.getByText(/Home/)).toBeInTheDocument;
 });
-

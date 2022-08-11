@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { PropTypes } from 'prop-types';
 import PicDetails from '../components/PicDetails';
 
 const picsRender = () => {
@@ -15,34 +14,34 @@ const picsRender = () => {
   };
 
   return (
-      <PicDetails
-        image={picsProps.image}
-        name={picsProps.name}
-        date={picsProps.date}
-        media={picsProps.media}
-        description={picsProps.description}
-        author={picsProps.author}
-        service={picsProps.service}
-      />
+    <PicDetails
+      image={picsProps.image}
+      name={picsProps.name}
+      date={picsProps.date}
+      media={picsProps.media}
+      description={picsProps.description}
+      author={picsProps.author}
+      service={picsProps.service}
+    />
   );
 };
 
 test('pic displayed', () => {
   render(<PicDetails />, { wrapper: picsRender });
-  expect(screen.getByText(/Dario/)).toBeInTheDocument;
+  return expect(screen.getByText(/Dario/)).toBeInTheDocument;
 });
 
 test('pic displayed', () => {
   render(<PicDetails />, { wrapper: picsRender });
-  expect(screen.getByText(/2022-10-10/)).toBeInTheDocument;
+  return expect(screen.getByText(/2022-10-10/)).toBeInTheDocument;
 });
 
 test('pic displayed', () => {
-    render(<PicDetails />, { wrapper: picsRender });
-    expect(screen.getByText(/Nebula/)).toBeInTheDocument;
-  });
+  render(<PicDetails />, { wrapper: picsRender });
+  return expect(screen.getByText(/Nebula/)).toBeInTheDocument;
+});
 
-  test('pic displayed', () => {
-    render(<PicDetails />, { wrapper: picsRender });
-    expect(screen.getByText(/fff/)).toBeInTheDocument;
-  });
+test('pic displayed', () => {
+  render(<PicDetails />, { wrapper: picsRender });
+  return expect(screen.getByText(/fff/)).toBeInTheDocument;
+});

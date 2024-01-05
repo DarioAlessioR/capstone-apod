@@ -1,8 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const apiUrl = 'https://api.nasa.gov/planetary/apod?api_key=';
-const apiKey = 'vFnwG1TUnH6EUE3InyLcQ3LeHeldl4GzaHH4TkGf';
-// previous: 'IA8VeeF1WVJLR4ZQV8EkoImQBIxKyzcboEU1E7G2'
+const apiKey = 'OSCLzO1eeu2qJffkWDUEnhw5vgCZGBKQUF8gHUVJ';
+// previous = vFnwG1TUnH6EUE3InyLcQ3LeHeldl4GzaHH4TkGf
+
 let today = new Date();
 let dd = today.getDate();
 let mm = today.getMonth() + 0;
